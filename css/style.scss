@@ -34,6 +34,11 @@ body{
         }
     }
 }
+.section_title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #404040;
+}
 @keyframes strokedash{
     0%{
         stroke-dashoffset: 280px;
@@ -124,6 +129,7 @@ body{
                 border-radius: 5px;
                 cursor: pointer;
                 margin-right: 30px;
+                color: #626262;
             }
             .menu-bar{
                 width: 30px;
@@ -797,12 +803,7 @@ body{
                 .left{
                     display: flex;
                     align-items: center;
-                    h2{
-                        font-size: 40px;
-                        color: #404040;
-                        font-weight: 700;
-                        margin-right: 20px;
-                    }
+                    .section_title{margin-right: 20px;}
                     .newsBtn{
                         width: 60px;
                         height: 60px;
@@ -938,11 +939,6 @@ body{
         margin-top: 180px;
         height: 100%;
         .child-img-area{
-            h2{
-                font-size: 40px;
-                font-weight: 600;
-                color: #404040;
-            }
             .child-img{
                 display: flex;
                 justify-content: center;
@@ -976,12 +972,7 @@ body{
     }
     .event{
         margin-top: 180px;
-        h2{
-            font-size: 40px;
-            font-weight: 600;
-            color: #404040;
-            margin-bottom: 50px;
-        }
+        .section_title{margin-bottom: 50px;}
         .container{
             .ENDviolence{
                 width: 100%;
@@ -1082,12 +1073,7 @@ body{
                 .left{
                     display: flex;
                     align-items: center;
-                    h2{
-                        font-size: 40px;
-                        color: #404040;
-                        font-weight: 700;
-                        margin-right: 20px;
-                    }
+                    .section_title{margin-right: 20px;}
                     .peopleBtn{
                         width: 60px;
                         height: 60px;
@@ -1289,10 +1275,7 @@ body{
     background: #F5F5F5;
     padding-bottom: 70px;
     .news-letter{
-        h3{
-            font-size: 40px;
-            font-weight: 600;
-            color: #404040;
+        .section_title{
             padding-top: 90px;
             margin-bottom: 50px;
         }
@@ -1388,8 +1371,8 @@ body{
                         &:not(:last-child){margin-right: 10px;}
                         a{
                             display: block;
-                            width: 35px;
-                            height: 35px;
+                            width: 30px;
+                            height: 30px;
                             object-fit: contain;
                             img{
                                 display: block;
@@ -1645,6 +1628,7 @@ body{
     }
 }
 @media screen and (max-width:1020px){
+    .section_title{font-size: 30px;}
     #slide{
         height: 480px;
         .slide-list{
@@ -1688,7 +1672,6 @@ body{
             .news-top{
                 .container{
                     .left{
-                        h2{font-size: 30px;}
                         .newsBtn{
                             width: 47px;
                             height: 47px;
@@ -1717,7 +1700,6 @@ body{
         .child-friendly{
             margin-top: 140px;
             .child-img-area{
-                h2{font-size: 30px;}
                 .child-img{
                     flex-wrap: wrap;
                     gap: 60px;
@@ -1735,10 +1717,7 @@ body{
               }
         }
         .event{
-            h2{
-                font-size: 30px;
-                margin-bottom: 30px;
-            }
+            .section_title{margin-bottom: 30px;}
             .event-area{
                 padding-bottom: 0;
                 .evnetBtn{
@@ -1755,7 +1734,6 @@ body{
             .people-top{
                 .container{
                     .left{
-                        h2{font-size: 30px;}
                         .peopleBtn{
                             width: 47px;
                             height: 47px;
@@ -1830,8 +1808,7 @@ body{
     }
     #footer{
         .news-letter{
-            h3{
-                font-size: 30px;
+            .section_title{
                 text-align: center;
                 padding-top: 60px;
                 margin-bottom: 30px;
@@ -2032,7 +2009,10 @@ body{
                         justify-content: center;
                         margin-top: 30px;
                         .period-big{display: none;}
-                        .donate-btn-yellow{padding: 12px 28px;}
+                        .donate-btn-yellow{
+                            padding: 12px 28px;
+                            font-size: 15px;
+                        }
                     }
                 }
             }
@@ -2103,9 +2083,8 @@ body{
                     .left{
                         flex-wrap: wrap;
                         width: 70%;
-                        h2{
+                        .section_title{
                             width: 100%;
-                            font-size: 30px;
                             margin-bottom: 20px;
                         }
                         .peopleBtn{
@@ -2178,8 +2157,72 @@ body{
                 }
             }
         }
+        .enterprise{ul{li{a{width: 70px;}}}}
     }
     #footer{
-        .news-letter{.news-info{.get-news{width: 100%;}}} 
+        .news-letter{
+            .news-info{
+            .news-info-text{
+                flex-wrap: wrap;
+                .name{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+                .email{width: 100%;}
+            }
+            .get-news{width: 100%;}
+            }
+        } 
+    }
+}
+@media screen and (max-width:320px){
+    .section_title{font-size: 23px;}
+    #main{
+        .donate{
+            ::after{
+                height: 90%;
+              }
+            .donate-text{
+                h3{font-size: 35px;}
+                .container{
+                    margin-top: 50px;
+                    .option{
+                        .amount{
+                            li{
+                                button{
+                                    padding: 15px 15px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .event{
+            .container{
+                .ENDviolence{
+                    .ENDviolence-text{
+                        .ENDviolence-title{font-size: 18px;}
+                        .sub-detail{ font-size: 15px;}
+                    }
+                }
+            }
+            .event-area{
+                margin-top: 50px;
+                .evnetBtn{
+                    width: 40px;
+                    height: 40px;
+                }
+                .evet-banner{
+                    width: 180px;
+                    ul{
+                        li{
+                            a{width: 160px;}
+                        }
+                    }
+                }
+            }
+        }
     }
 }
