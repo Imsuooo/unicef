@@ -2138,12 +2138,22 @@ body.menuActive {
   }
   #main .event .event-area {
     margin-top: 50px;
+    position: relative;
+  }
+  #main .event .event-area .evnetBtn {
+    position: absolute;
+  }
+  #main .event .event-area .evnetBtn.evnet-left-btn {
+    left: 0;
+  }
+  #main .event .event-area .evnetBtn.evnet-right-btn {
+    right: 0;
   }
   #main .event .event-area .evet-banner {
-    width: 270px;
+    width: 100%;
   }
   #main .event .event-area .evet-banner ul li a {
-    width: 270px;
+    width: 240px;
   }
   #main .people {
     margin-top: 100px;
@@ -2238,7 +2248,7 @@ body.menuActive {
 }
 @media screen and (max-width: 320px) {
   .section_title {
-    font-size: 23px;
+    font-size: 20px;
   }
   #main .donate ::after {
     height: 90%;
@@ -2266,10 +2276,7 @@ body.menuActive {
     width: 40px;
     height: 40px;
   }
-  #main .event .event-area .evet-banner {
-    width: 180px;
-  }
   #main .event .event-area .evet-banner ul li a {
-    width: 160px;
+    width: 225px;
   }
 }/*# sourceMappingURL=style.css.map */

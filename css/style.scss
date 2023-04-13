@@ -2069,9 +2069,15 @@ body{
             margin-top: 100px;
             .event-area{
                 margin-top: 50px;
+                position: relative;
+                .evnetBtn{
+                    position: absolute;
+                    &.evnet-left-btn{left: 0;}
+                    &.evnet-right-btn{right: 0;}
+                }
                 .evet-banner{
-                    width: 270px;
-                    ul{li{a{width: 270px;}}}
+                    width: 100%;
+                    ul{li{a{width: 240px;}}}
                 }
             }
         }
@@ -2176,7 +2182,7 @@ body{
     }
 }
 @media screen and (max-width:320px){
-    .section_title{font-size: 23px;}
+    .section_title{font-size: 20px;}
     #main{
         .donate{
             ::after{
@@ -2215,10 +2221,9 @@ body{
                     height: 40px;
                 }
                 .evet-banner{
-                    width: 180px;
                     ul{
                         li{
-                            a{width: 160px;}
+                            a{width: 225px;}
                         }
                     }
                 }

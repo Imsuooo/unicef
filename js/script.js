@@ -394,3 +394,4 @@ document.querySelector('.people-left-btn').onclick=()=>{
 //후원 기업 로고 슬라이드
 setInterval(() => {
   document.querySelector('.enterprise').scrollLeft+=document.querySelector('.enterprise>ul>li').scrollWidth;}, 2500);
+  
