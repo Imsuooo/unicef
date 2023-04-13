@@ -2069,9 +2069,13 @@ body.menuActive {
   #main .donate .donate-text .container .option .amount {
     justify-content: space-between;
   }
+  #main .donate .donate-text .container .option .amount li {
+    width: 30%;
+  }
   #main .donate .donate-text .container .option .amount li button {
-    padding: 15px 25px;
-    font-size: 14px;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 12px;
   }
   #main .donate .donate-text .container .self-text {
     font-size: 16px;
@@ -2092,14 +2096,15 @@ body.menuActive {
   }
   #main .news .news-top .container {
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   #main .news .news-top .container .left {
     flex-wrap: wrap;
-    width: 70%;
   }
   #main .news .news-top .container .left h2 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   #main .news .news-top .container .right a .viewMore {
     font-size: 14px;
@@ -2160,14 +2165,15 @@ body.menuActive {
   }
   #main .people .people-top .container {
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   #main .people .people-top .container .left {
     flex-wrap: wrap;
-    width: 70%;
   }
   #main .people .people-top .container .left .section_title {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   #main .people .people-top .container .left .peopleBtn {
     width: 47px;
@@ -2258,10 +2264,6 @@ body.menuActive {
   }
   #main .donate .donate-text .container {
     margin-top: 50px;
-  }
-  #main .donate .donate-text .container .option .amount li button {
-    padding: 15px 15px;
-    font-size: 12px;
   }
   #main .event .container .ENDviolence .ENDviolence-text .ENDviolence-title {
     font-size: 18px;
