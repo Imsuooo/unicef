@@ -1717,16 +1717,33 @@ body{
               }
         }
         .event{
+            .evet-banner-container{padding: 0;}
             .section_title{margin-bottom: 30px;}
             .event-area{
                 padding-bottom: 0;
+                position: relative;
                 .evnetBtn{
                     width: 50px;
                     height: 50px;
+                    position: absolute;
+                    &.evnet-left-btn{left: 0;}
+                    &.evnet-right-btn{right: 0;}
+                    .btn-circle{
+                        background: url(../img/left.png) no-repeat center center;
+                        background-size: 20px;
+                        &:hover .btn-cls{fill: rgba(255, 255, 255, 0.2);}
+                        &.btn-rotate{
+                            transform: rotate(180deg);
+                        }
+                        .btn-cls{stroke: #fff;}
+                    }
                 }
                 .evet-banner{
-                    width: 540px;
-                    ul{li{a{width: 250px;}}}
+                    width: 100%;
+                    margin: 0;
+                    ul{
+                        li{a{width: 250px;}
+                    }}
                 }
             }
         }
@@ -1802,9 +1819,7 @@ body{
                 }
             }
         }
-        .enterprise{
-            margin: 15px 0;
-        }
+        .enterprise{margin: 15px 0;}
     }
     #footer{
         .news-letter{
@@ -1869,6 +1884,7 @@ body{
     }
 }
 @media screen and (max-width:510px){
+    .section_title{font-size: 24px;}
     #header{
         .container{
             .left{
@@ -2074,12 +2090,6 @@ body{
             margin-top: 100px;
             .event-area{
                 margin-top: 50px;
-                position: relative;
-                .evnetBtn{
-                    position: absolute;
-                    &.evnet-left-btn{left: 0;}
-                    &.evnet-right-btn{right: 0;}
-                }
                 .evet-banner{
                     width: 100%;
                     ul{li{a{width: 240px;}}}

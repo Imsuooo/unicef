@@ -1802,18 +1802,43 @@ body.menuActive {
     font-size: 16px;
     margin-top: 60px;
   }
+  #main .event .evet-banner-container {
+    padding: 0;
+  }
   #main .event .section_title {
     margin-bottom: 30px;
   }
   #main .event .event-area {
     padding-bottom: 0;
+    position: relative;
   }
   #main .event .event-area .evnetBtn {
     width: 50px;
     height: 50px;
+    position: absolute;
+  }
+  #main .event .event-area .evnetBtn.evnet-left-btn {
+    left: 0;
+  }
+  #main .event .event-area .evnetBtn.evnet-right-btn {
+    right: 0;
+  }
+  #main .event .event-area .evnetBtn .btn-circle {
+    background: url(../img/left.png) no-repeat center center;
+    background-size: 20px;
+  }
+  #main .event .event-area .evnetBtn .btn-circle:hover .btn-cls {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+  #main .event .event-area .evnetBtn .btn-circle.btn-rotate {
+    transform: rotate(180deg);
+  }
+  #main .event .event-area .evnetBtn .btn-circle .btn-cls {
+    stroke: #fff;
   }
   #main .event .event-area .evet-banner {
-    width: 540px;
+    width: 100%;
+    margin: 0;
   }
   #main .event .event-area .evet-banner ul li a {
     width: 250px;
@@ -1956,6 +1981,9 @@ body.menuActive {
   }
 }
 @media screen and (max-width: 510px) {
+  .section_title {
+    font-size: 24px;
+  }
   #header .container .left .logo {
     width: 70px;
   }
@@ -2143,16 +2171,6 @@ body.menuActive {
   }
   #main .event .event-area {
     margin-top: 50px;
-    position: relative;
-  }
-  #main .event .event-area .evnetBtn {
-    position: absolute;
-  }
-  #main .event .event-area .evnetBtn.evnet-left-btn {
-    left: 0;
-  }
-  #main .event .event-area .evnetBtn.evnet-right-btn {
-    right: 0;
   }
   #main .event .event-area .evet-banner {
     width: 100%;
